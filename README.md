@@ -4,7 +4,7 @@ A Mandelbrot fractal viewer written in Rust.
 # Compiling
 
 #### Dependencies
-* [rust_minifb](https://github.com/emoon/rust_minifb)
+* This viewer uses the [rust_minifb](https://github.com/emoon/rust_minifb) library to display graphics to the screen.
 
 You run `cargo build` and start it manually, or simply run `cargo run` and it will start automatically in debug mode.
 
