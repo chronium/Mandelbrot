@@ -27,10 +27,10 @@ fn mandelbrot(px: usize, py: usize) -> u32 {
     let y0: f64 = map(py as f64, 0f64, HEIGHT as f64, -1f64, 1f64);
     let mut x = 0f64;
     let mut y = 0f64;
-    let mut xsqrt = 0;
-    let mut ysqrt = 0;
-    let mut iter: f64 = 0f64;
-    let max_iter: f64 = 64f64;
+    let mut xsqrt = 0f64;
+    let mut ysqrt = 0f64;
+    let mut iter = 0f64;
+    let max_iter = 64f64;
     while xsqrt + ysqrt < 4f64 && iter < max_iter {
         let xt: f64 = xsqrt - ysqrt + x0;
         y = 2f64 * x * y + y0;
